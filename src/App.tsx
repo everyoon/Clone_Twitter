@@ -43,6 +43,9 @@ const GlobalStyles = createGlobalStyle`
   ${reset};
   *{
     box-sizing: border-box;
+    ::-webkit-scrollbar {
+  display:none;
+  }
   }
   body{
     background-color: #000;
@@ -50,6 +53,7 @@ const GlobalStyles = createGlobalStyle`
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 `;
+
 const Wrapper = styled.div`
   height: 100vh;
   display: flex;
